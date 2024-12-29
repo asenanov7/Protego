@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1055681684029",
+    "project_id": "protego-961cf",
+    "storage_bucket": "protego-961cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055681684029:android:57bb8c246ce00ba8c0c054",
+        "android_client_info": {
+          "package_name": "com.example.protego"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB4IEux1UkDeiS-h5SkSaCisQPrFz82FU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
