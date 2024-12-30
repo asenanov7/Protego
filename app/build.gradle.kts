@@ -3,6 +3,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.services)
+    alias(libs.plugins.kotlin.ksp)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.parcelize)
 }
 
 android {
@@ -42,9 +45,35 @@ android {
 
 dependencies {
 
-    //Firebase
+    // Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
+
+    // Mvi
+    implementation(libs.mvikotlin.main)
+    implementation(libs.mvikotlin.core)
+    implementation(libs.mvikotlin.coroutines)
+
+    // Decompose
+    implementation(libs.decompose.core)
+    implementation(libs.decompose.jetpack)
+
+    // Network
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.gsonConverter)
+
+    // Database
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+
+    // Image
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
+
+    // DI
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
